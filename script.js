@@ -1,6 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
 import { getFirestore, collection, addDoc, updateDoc, deleteDoc, doc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
 
+// Firebase 설정
+const firebaseConfig = {
+    apiKey: "AIzaSyCxLRGVPZfeH7_RFrE0tQNsINJtN5_g_x8",
+    authDomain: "chemical-wiki-project.firebaseapp.com",
+    projectId: "chemical-wiki-project",
+    storageBucket: "chemical-wiki-project.firebasestorage.app",
+    messagingSenderId: "1039716743642",
+    appId: "1:1039716743642:web:36073d8dbcc50a938b68e3"
+};
+
 // Firebase 초기화
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -628,4 +638,3 @@ window.showNewCategoryInput = showNewCategoryInput;
 window.scrollToSection = scrollToSection;
 window.toggleTheme = toggleTheme;
 window.updateLogo = updateLogo;
-
