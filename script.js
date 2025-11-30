@@ -1,20 +1,3 @@
-// Firebase 관련 import 제거: 로컬 저장소만 사용
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-// import { getFirestore, collection, addDoc, updateDoc, deleteDoc, doc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
-
-// Firebase 설정 제거
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCxLRGVPZfeH7_RFrE0tQNsINJtN5_g_x8",
-//     authDomain: "chemical-wiki-project.firebaseapp.com",
-//     projectId: "chemical-wiki-project",
-//     storageBucket: "chemical-wiki-project.firebasestorage.app",
-//     messagingSenderId: "1039716743642",
-//     appId: "1:1039716743642:web:36073d8dbcc50a938b68e3"
-// };
-
-// Firebase 초기화 제거
-// const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app); // db 변수 제거
 
 // 전역 변수
 let chemicals = [];
@@ -738,3 +721,4 @@ window.showNewCategoryInput = showNewCategoryInput;
 window.scrollToSection = scrollToSection;
 window.toggleTheme = toggleTheme;
 window.updateLogo = updateLogo;
+
