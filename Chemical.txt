@@ -1,0 +1,411 @@
+## 무기화합물
+
+1. **Name**: 물 | **Formula**: H₂O | **Category**: 무기화합물 | **Description**: 생명에 필수적인 액체로 모든 생명체의 주요 구성 성분
+
+2. **Name**: 이산화탄소 | **Formula**: CO₂ | **Category**: 무기화합물 | **Description**: 광합성의 원료이며 온실가스의 주요 성분
+
+3. **Name**: 암모니아 | **Formula**: NH₃ | **Category**: 무기화합물 | **Description**: 자극적 냄새의 무색 기체로 비료 생산의 핵심 원료
+
+4. **Name**: 염화나트륨 | **Formula**: NaCl | **Category**: 무기화합물 | **Description**: 식탁염으로 알려진 백색 결정성 고체
+
+5. **Name**: 황산 | **Formula**: H₂SO₄ | **Category**: 무기화합물 | **Description**: 강산성 무색 액체로 산업에서 가장 많이 생산되는 화학물질
+
+6. **Name**: 염산 | **Formula**: HCl | **Category**: 무기화합물 | **Description**: 강산성 용액으로 위산의 주성분
+
+7. **Name**: 질산 | **Formula**: HNO₃ | **Category**: 무기화합물 | **Description**: 강한 산화력을 가진 무색 액체
+
+8. **Name**: 수산화나트륨 | **Formula**: NaOH | **Category**: 무기화합물 | **Description**: 가성소다로 불리는 강염기성 백색 고체
+
+9. **Name**: 과산화수소 | **Formula**: H₂O₂ | **Category**: 무기화합물 | **Description**: 소독제와 표백제로 사용되는 무색 액체
+
+10. **Name**: 산화칼슘 | **Formula**: CaO | **Category**: 무기화합물 | **Description**: 생석회로 불리며 건축 재료로 사용
+
+11. **Name**: 탄산칼슘 | **Formula**: CaCO₃ | **Category**: 무기화합물 | **Description**: 석회석의 주성분이며 제산제로 사용
+
+12. **Name**: 산화철 | **Formula**: Fe₂O₃ | **Category**: 무기화합물 | **Description**: 녹의 주성분인 적갈색 고체
+
+13. **Name**: 황화수소 | **Formula**: H₂S | **Category**: 무기화합물 | **Description**: 썩은 달걀 냄새가 나는 유독성 기체
+
+14. **Name**: 이산화황 | **Formula**: SO₂ | **Category**: 무기화합물 | **Description**: 산성비의 원인 물질이며 보존제로 사용
+
+15. **Name**: 일산화탄소 | **Formula**: CO | **Category**: 무기화합물 | **Description**: 무색무취의 유독성 기체
+
+16. **Name**: 산화알루미늄 | **Formula**: Al₂O₃ | **Category**: 무기화합물 | **Description**: 알루미나로 불리며 연마재와 세라믹 원료
+
+17. **Name**: 질소 | **Formula**: N₂ | **Category**: 무기화합물 | **Description**: 대기의 78%를 차지하는 무색무취 기체
+
+18. **Name**: 산소 | **Formula**: O₂ | **Category**: 무기화합물 | **Description**: 호흡과 연소에 필수적인 기체
+
+19. **Name**: 수소 | **Formula**: H₂ | **Category**: 무기화합물 | **Description**: 가장 가벼운 원소로 청정 에너지원
+
+20. **Name**: 오존 | **Formula**: O₃ | **Category**: 무기화합물 | **Description**: 자외선을 차단하는 청색 기체
+
+21. **Name**: 인산 | **Formula**: H₃PO₄ | **Category**: 무기화합물 | **Description**: 비료와 세제 제조에 사용되는 산
+
+22. **Name**: 탄산나트륨 | **Formula**: Na₂CO₃ | **Category**: 무기화합물 | **Description**: 소다회로 불리며 유리 제조에 사용
+
+23. **Name**: 염화칼슘 | **Formula**: CaCl₂ | **Category**: 무기화합물 | **Description**: 제설제와 건조제로 사용되는 흡습성 물질
+
+24. **Name**: 황산칼슘 | **Formula**: CaSO₄ | **Category**: 무기화합물 | **Description**: 석고의 주성분으로 건축 재료
+
+25. **Name**: 수산화칼슘 | **Formula**: Ca(OH)₂ | **Category**: 무기화합물 | **Description**: 소석회로 불리며 건축과 농업에 사용
+
+26. **Name**: 질산암모늄 | **Formula**: NH₄NO₃ | **Category**: 무기화합물 | **Description**: 질소 비료의 주요 성분
+
+27. **Name**: 황산암모늄 | **Formula**: (NH₄)₂SO₄ | **Category**: 무기화합물 | **Description**: 비료로 널리 사용되는 무기염
+
+28. **Name**: 염화암모늄 | **Formula**: NH₄Cl | **Category**: 무기화합물 | **Description**: 전지와 납땜 플럭스에 사용
+
+29. **Name**: 탄산수소나트륨 | **Formula**: NaHCO₃ | **Category**: 무기화합물 | **Description**: 베이킹소다로 알려진 제빵 팽창제
+
+30. **Name**: 과망간산칼륨 | **Formula**: KMnO₄ | **Category**: 무기화합물 | **Description**: 자주색 결정으로 소독과 산화제로 사용
+
+31. **Name**: 염소 | **Formula**: Cl₂ | **Category**: 무기화합물 | **Description**: 황록색 유독성 기체로 소독제
+
+32. **Name**: 불소 | **Formula**: F₂ | **Category**: 무기화합물 | **Description**: 가장 반응성이 높은 담황색 기체
+
+33. **Name**: 브롬 | **Formula**: Br₂ | **Category**: 무기화합물 | **Description**: 적갈색 휘발성 액체 할로겐
+
+34. **Name**: 요오드 | **Formula**: I₂ | **Category**: 무기화합물 | **Description**: 자주색 결정으로 소독제로 사용
+
+35. **Name**: 산화마그네슘 | **Formula**: MgO | **Category**: 무기화합물 | **Description**: 내화 재료와 제산제로 사용
+
+36. **Name**: 황산마그네슘 | **Formula**: MgSO₄ | **Category**: 무기화합물 | **Description**: 엡솜염으로 알려진 하제
+
+37. **Name**: 염화마그네슘 | **Formula**: MgCl₂ | **Category**: 무기화합물 | **Description**: 두부 응고제와 제설제
+
+38. **Name**: 산화아연 | **Formula**: ZnO | **Category**: 무기화합물 | **Description**: 백색 안료와 자외선 차단제
+
+39. **Name**: 황산아연 | **Formula**: ZnSO₄ | **Category**: 무기화합물 | **Description**: 영양 보충제와 농업용 비료
+
+40. **Name**: 염화칼륨 | **Formula**: KCl | **Category**: 무기화합물 | **Description**: 칼륨 비료와 소금 대체제
+
+41. **Name**: 질산칼륨 | **Formula**: KNO₃ | **Category**: 무기화합물 | **Description**: 초석으로 불리며 화약 제조에 사용
+
+42. **Name**: 탄산칼륨 | **Formula**: K₂CO₃ | **Category**: 무기화합물 | **Description**: 유리와 비누 제조에 사용
+
+43. **Name**: 황산구리 | **Formula**: CuSO₄ | **Category**: 무기화합물 | **Description**: 청색 결정으로 살균제와 안료
+
+44. **Name**: 산화구리 | **Formula**: CuO | **Category**: 무기화합물 | **Description**: 흑색 분말로 도자기 안료
+
+45. **Name**: 질산은 | **Formula**: AgNO₃ | **Category**: 무기화합물 | **Description**: 사진 현상과 소독제로 사용
+
+46. **Name**: 염화은 | **Formula**: AgCl | **Category**: 무기화합물 | **Description**: 감광성 물질로 사진 필름에 사용
+
+47. **Name**: 산화수은 | **Formula**: HgO | **Category**: 무기화합물 | **Description**: 적색 또는 황색 분말 수은 화합물
+
+48. **Name**: 산화납 | **Formula**: PbO | **Category**: 무기화합물 | **Description**: 황색 분말로 유리와 배터리 제조
+
+49. **Name**: 이산화규소 | **Formula**: SiO₂ | **Category**: 무기화합물 | **Description**: 석영과 모래의 주성분
+
+50. **Name**: 탄화규소 | **Formula**: SiC | **Category**: 무기화합물 | **Description**: 매우 단단한 연마재
+
+## 유기화합물
+
+51. **Name**: 메탄 | **Formula**: CH₄ | **Category**: 유기화합물 | **Description**: 가장 간단한 탄화수소로 천연가스의 주성분
+
+52. **Name**: 에탄 | **Formula**: C₂H₆ | **Category**: 유기화합물 | **Description**: 무색무취의 가연성 기체
+
+53. **Name**: 프로판 | **Formula**: C₃H₈ | **Category**: 유기화합물 | **Description**: LPG의 주성분으로 연료로 사용
+
+54. **Name**: 부탄 | **Formula**: C₄H₁₀ | **Category**: 유기화합물 | **Description**: 휴대용 가스의 연료
+
+55. **Name**: 에틸렌 | **Formula**: C₂H₄ | **Category**: 유기화합물 | **Description**: 플라스틱 원료이며 식물 호르몬
+
+56. **Name**: 아세틸렌 | **Formula**: C₂H₂ | **Category**: 유기화합물 | **Description**: 용접과 절단에 사용되는 고온 연료
+
+57. **Name**: 벤젠 | **Formula**: C₆H₆ | **Category**: 유기화합물 | **Description**: 방향족 화합물의 기본 구조
+
+58. **Name**: 톨루엔 | **Formula**: C₇H₈ | **Category**: 유기화합물 | **Description**: 용매와 화학 원료로 사용
+
+59. **Name**: 메탄올 | **Formula**: CH₃OH | **Category**: 유기화합물 | **Description**: 목정으로 불리는 독성 알코올
+
+60. **Name**: 에탄올 | **Formula**: C₂H₅OH | **Category**: 유기화합물 | **Description**: 주류의 주성분이며 연료로도 사용
+
+61. **Name**: 글리세롤 | **Formula**: C₃H₈O₃ | **Category**: 유기화합물 | **Description**: 보습제로 사용되는 3가 알코올
+
+62. **Name**: 아세트산 | **Formula**: CH₃COOH | **Category**: 유기화합물 | **Description**: 식초의 주성분인 유기산
+
+63. **Name**: 포름산 | **Formula**: HCOOH | **Category**: 유기화합물 | **Description**: 개미산으로 불리는 가장 간단한 카르복시산
+
+64. **Name**: 옥살산 | **Formula**: C₂H₂O₄ | **Category**: 유기화합물 | **Description**: 수산으로 불리며 표백제와 세척제
+
+65. **Name**: 아세톤 | **Formula**: C₃H₆O | **Category**: 유기화합물 | **Description**: 매니큐어 리무버와 용매로 사용
+
+66. **Name**: 포름알데히드 | **Formula**: CH₂O | **Category**: 유기화합물 | **Description**: 방부제와 수지 제조에 사용
+
+67. **Name**: 아세트알데히드 | **Formula**: C₂H₄O | **Category**: 유기화합물 | **Description**: 알코올 대사 중간체
+
+68. **Name**: 요소 | **Formula**: CO(NH₂)₂ | **Category**: 유기화합물 | **Description**: 질소 비료와 화장품 원료
+
+69. **Name**: 구연산 | **Formula**: C₆H₈O₇ | **Category**: 유기화합물 | **Description**: 감귤류에 함유된 신맛 물질
+
+70. **Name**: 젖산 | **Formula**: C₃H₆O₃ | **Category**: 유기화합물 | **Description**: 근육 피로 물질이며 발효 산물
+
+71. **Name**: 아스코르브산 | **Formula**: C₆H₈O₆ | **Category**: 유기화합물 | **Description**: 비타민 C로 알려진 항산화제
+
+72. **Name**: 아세트산에틸 | **Formula**: C₄H₈O₂ | **Category**: 유기화합물 | **Description**: 과일 향이 나는 용매
+
+73. **Name**: 염화메틸렌 | **Formula**: CH₂Cl₂ | **Category**: 유기화합물 | **Description**: 페인트 제거제와 용매
+
+74. **Name**: 클로로포름 | **Formula**: CHCl₃ | **Category**: 유기화합물 | **Description**: 과거 마취제로 사용된 용매
+
+75. **Name**: 사염화탄소 | **Formula**: CCl₄ | **Category**: 유기화합물 | **Description**: 세척제와 소화기에 사용되던 물질
+
+76. **Name**: 에틸렌글리콜 | **Formula**: C₂H₆O₂ | **Category**: 유기화합물 | **Description**: 부동액의 주성분
+
+77. **Name**: 프로필렌글리콜 | **Formula**: C₃H₈O₂ | **Category**: 유기화합물 | **Description**: 식품과 화장품 보습제
+
+78. **Name**: 페놀 | **Formula**: C₆H₅OH | **Category**: 유기화합물 | **Description**: 석탄산으로 불리는 소독제
+
+79. **Name**: 아닐린 | **Formula**: C₆H₅NH₂ | **Category**: 유기화합물 | **Description**: 염료와 약품 합성 원료
+
+80. **Name**: 니트로벤젠 | **Formula**: C₆H₅NO₂ | **Category**: 유기화합물 | **Description**: 아닐린 제조의 중간체
+
+81. **Name**: 스티렌 | **Formula**: C₈H₈ | **Category**: 유기화합물 | **Description**: 폴리스티렌 플라스틱 원료
+
+82. **Name**: 나프탈렌 | **Formula**: C₁₀H₈ | **Category**: 유기화합물 | **Description**: 방충제로 사용되는 방향족 탄화수소
+
+83. **Name**: 안트라센 | **Formula**: C₁₄H₁₀ | **Category**: 유기화합물 | **Description**: 염료 합성의 중간체
+
+84. **Name**: 피리딘 | **Formula**: C₅H₅N | **Category**: 유기화합물 | **Description**: 의약품과 농약 합성 원료
+
+85. **Name**: 푸란 | **Formula**: C₄H₄O | **Category**: 유기화합물 | **Description**: 용매와 수지 제조 원료
+
+86. **Name**: 티오펜 | **Formula**: C₄H₄S | **Category**: 유기화합물 | **Description**: 의약품과 염료 합성 원료
+
+87. **Name**: 인돌 | **Formula**: C₈H₇N | **Category**: 유기화합물 | **Description**: 트립토판의 구조 단위
+
+88. **Name**: 아크릴산 | **Formula**: C₃H₄O₂ | **Category**: 유기화합물 | **Description**: 아크릴 수지와 도료 원료
+
+89. **Name**: 말레산 | **Formula**: C₄H₄O₄ | **Category**: 유기화합물 | **Description**: 불포화 폴리에스터 수지 원료
+
+90. **Name**: 숙신산 | **Formula**: C₄H₆O₄ | **Category**: 유기화합물 | **Description**: 크렙스 회로의 중간체
+
+91. **Name**: 아디프산 | **Formula**: C₆H₁₀O₄ | **Category**: 유기화합물 | **Description**: 나일론 6,6의 원료
+
+92. **Name**: 헥사메틸렌디아민 | **Formula**: C₆H₁₆N₂ | **Category**: 유기화합물 | **Description**: 나일론 합성 원료
+
+93. **Name**: 테레프탈산 | **Formula**: C₈H₆O₄ | **Category**: 유기화합물 | **Description**: PET 플라스틱의 원료
+
+94. **Name**: 비스페놀A | **Formula**: C₁₅H₁₆O₂ | **Category**: 유기화합물 | **Description**: 폴리카보네이트와 에폭시 수지 원료
+
+95. **Name**: 카페인 | **Formula**: C₈H₁₀N₄O₂ | **Category**: 유기화합물 | **Description**: 커피와 차에 함유된 각성제
+
+96. **Name**: 니코틴 | **Formula**: C₁₀H₁₄N₂ | **Category**: 유기화합물 | **Description**: 담배의 주요 알칼로이드
+
+97. **Name**: 모르핀 | **Formula**: C₁₇H₁₉NO₃ | **Category**: 유기화합물 | **Description**: 강력한 진통제
+
+98. **Name**: 코데인 | **Formula**: C₁₈H₂₁NO₃ | **Category**: 유기화합물 | **Description**: 진해제로 사용되는 알칼로이드
+
+99. **Name**: 아스피린 | **Formula**: C₉H₈O₄ | **Category**: 유기화합물 | **Description**: 해열진통제로 널리 사용
+
+100. **Name**: 파라세타몰 | **Formula**: C₈H₉NO₂ | **Category**: 유기화합물 | **Description**: 아세트아미노펜으로 알려진 진통제
+
+## 생화학 화합물
+
+101. **Name**: 글루코스 | **Formula**: C₆H₁₂O₆ | **Category**: 생화학 화합물 | **Description**: 포도당으로 생명체의 주요 에너지원
+
+102. **Name**: 프룩토스 | **Formula**: C₆H₁₂O₆ | **Category**: 생화학 화합물 | **Description**: 과당으로 과일의 단맛 성분
+
+103. **Name**: 갈락토스 | **Formula**: C₆H₁₂O₆ | **Category**: 생화학 화합물 | **Description**: 유당의 구성 성분
+
+104. **Name**: 수크로스 | **Formula**: C₁₂H₂₂O₁₁ | **Category**: 생화학 화합물 | **Description**: 설탕의 주성분
+
+105. **Name**: 락토스 | **Formula**: C₁₂H₂₂O₁₁ | **Category**: 생화학 화합물 | **Description**: 유당으로 우유의 당 성분
+
+106. **Name**: 말토스 | **Formula**: C₁₂H₂₂O₁₁ | **Category**: 생화학 화합물 | **Description**: 맥아당으로 전분 분해 산물
+
+107. **Name**: 셀룰로스 | **Formula**: (C₆H₁₀O₅)n | **Category**: 생화학 화합물 | **Description**: 식물 세포벽의 주성분
+
+108. **Name**: 전분 | **Formula**: (C₆H₁₀O₅)n | **Category**: 생화학 화합물 | **Description**: 식물의 저장 탄수화물
+
+109. **Name**: 글리코겐 | **Formula**: (C₆H₁₀O₅)n | **Category**: 생화학 화합물 | **Description**: 동물의 저장 탄수화물
+
+110. **Name**: 글리신 | **Formula**: C₂H₅NO₂ | **Category**: 생화학 화합물 | **Description**: 가장 간단한 아미노산
+
+111. **Name**: 알라닌 | **Formula**: C₃H₇NO₂ | **Category**: 생화학 화합물 | **Description**: 단백질 구성 아미노산
+
+112. **Name**: 발린 | **Formula**: C₅H₁₁NO₂ | **Category**: 생화학 화합물 | **Description**: 필수 아미노산
+
+113. **Name**: 류신 | **Formula**: C₆H₁₃NO₂ | **Category**: 생화학 화합물 | **Description**: 근육 형성에 중요한 필수 아미노산
+
+114. **Name**: 이소류신 | **Formula**: C₆H₁₃NO₂ | **Category**: 생화학 화합물 | **Description**: 분지쇄 필수 아미노산
+
+115. **Name**: 페닐알라닌 | **Formula**: C₉H₁₁NO₂ | **Category**: 생화학 화합물 | **Description**: 방향족 필수 아미노산
+
+116. **Name**: 티로신 | **Formula**: C₉H₁₁NO₃ | **Category**: 생화학 화합물 | **Description**: 신경전달물질 전구체
+
+117. **Name**: 트립토판 | **Formula**: C₁₁H₁₂N₂O₂ | **Category**: 생화학 화합물 | **Description**: 세로토닌 전구체인 필수 아미노산
+
+118. **Name**: 메티오닌 | **Formula**: C₅H₁₁NO₂S | **Category**: 생화학 화합물 | **Description**: 황 함유 필수 아미노산
+
+119. **Name**: 시스테인 | **Formula**: C₃H₇NO₂S | **Category**: 생화학 화합물 | **Description**: 이황화 결합 형성 아미노산
+
+120. **Name**: 세린 | **Formula**: C₃H₇NO₃ | **Category**: 생화학 화합물 | **Description**: 인산화 부위를 제공하는 아미노산
+
+121. **Name**: 트레오닌 | **Formula**: C₄H₉NO₃ | **Category**: 생화학 화합물 | **Description**: 수산기를 가진 필수 아미노산
+
+122. **Name**: 아스파르트산 | **Formula**: C₄H₇NO₄ | **Category**: 생화학 화합물 | **Description**: 산성 아미노산
+
+123. **Name**: 글루탐산 | **Formula**: C₅H₉NO₄ | **Category**: 생화학 화합물 | **Description**: MSG의 구성 성분인 아미노산
+
+124. **Name**: 리신 | **Formula**: C₆H₁₄N₂O₂ | **Category**: 생화학 화합물 | **Description**: 염기성 필수 아미노산
+
+125. **Name**: 아르기닌 | **Formula**: C₆H₁₄N₄O₂ | **Category**: 생화학 화합물 | **Description**: 산화질소 생성에 관여하는 아미노산
+
+126. **Name**: 히스티딘 | **Formula**: C₆H₉N₃O₂ | **Category**: 생화학 화합물 | **Description**: 이미다졸 고리를 가진 아미노산
+
+127. **Name**: 프롤린 | **Formula**: C₅H₉NO₂ | **Category**: 생화학 화합물 | **Description**: 고리 구조를 가진 아미노산
+
+128. **Name**: 아데닌 | **Formula**: C₅H₅N₅ | **Category**: 생화학 화합물 | **Description**: DNA와 RNA의 퓨린 염기
+
+129. **Name**: 구아닌 | **Formula**: C₅H₅N₅O | **Category**: 생화학 화합물 | **Description**: 핵산의 퓨린 염기
+
+130. **Name**: 시토신 | **Formula**: C₄H₅N₃O | **Category**: 생화학 화합물 | **Description**: DNA와 RNA의 피리미딘 염기
+
+131. **Name**: 티민 | **Formula**: C₅H₆N₂O₂ | **Category**: 생화학 화합물 | **Description**: DNA의 피리미딘 염기
+
+132. **Name**: 우라실 | **Formula**: C₄H₄N₂O₂ | **Category**: 생화학 화합물 | **Description**: RNA의 피리미딘 염기
+
+133. **Name**: 콜레스테롤 | **Formula**: C₂₇H₄₆O | **Category**: 생화학 화합물 | **Description**: 세포막의 주요 스테로이드
+
+134. **Name**: 테스토스테론 | **Formula**: C₁₉H₂₈O₂ | **Category**: 생화학 화합물 | **Description**: 남성 호르몬
+
+135. **Name**: 에스트라디올 | **Formula**: C₁₈H₂₄O₂ | **Category**: 생화학 화합물 | **Description**: 여성 호르몬
+
+136. **Name**: 프로게스테론 | **Formula**: C₂₁H₃₀O₂ | **Category**: 생화학 화합물 | **Description**: 임신 유지 호르몬
+
+137. **Name**: 코르티솔 | **Formula**: C₂₁H₃₀O₅ | **Category**: 생화학 화합물 | **Description**: 스트레스 호르몬
+
+138. **Name**: 아드레날린 | **Formula**: C₉H₁₃NO₃ | **Category**: 생화학 화합물 | **Description**: 에피네프린으로 불리는 흥분 호르몬
+
+139. **Name**: 노르아드레날린 | **Formula**: C₈H₁₁NO₃ | **Category**: 생화학 화합물 | **Description**: 노르에피네프린으로 신경전달물질
+
+140. **Name**: 도파민 | **Formula**: C₈H₁₁NO₂ | **Category**: 생화학 화합물 | **Description**: 쾌락과 보상 신경전달물질
+
+141. **Name**: 세로토닌 | **Formula**: C₁₀H₁₂N₂O | **Category**: 생화학 화합물 | **Description**: 행복 호르몬으로 불리는 신경전달물질
+
+142. **Name**: 히스타민 | **Formula**: C₅H₉N₃ | **Category**: 생화학 화합물 | **Description**: 알레르기 반응 매개 물질
+
+143. **Name**: 아세틸콜린 | **Formula**: C₇H₁₆NO₂ | **Category**: 생화학 화합물 | **Description**: 신경근 접합부의 신경전달물질
+
+144. **Name**: 크레아틴 | **Formula**: C₄H₉N₃O₂ | **Category**: 생화학 화합물 | **Description**: 근육 에너지 대사 물질
+
+145. **Name**: 크레아티닌 | **Formula**: C₄H₇N₃O | **Category**: 생화학 화합물 | **Description**: 크레아틴의 대사 산물
+
+146. **Name**: 요산 | **Formula**: C₅H₄N₄O₃ | **Category**: 생화학 화합물 | **Description**: 퓨린 대사의 최종 산물
+
+147. **Name**: 빌리루빈 | **Formula**: C₃₃H₃₆N₄O₆ | **Category**: 생화학 화합물 | **Description**: 헴 분해 산물로 황달 원인
+
+148. **Name**: 헴 | **Formula**: C₃₄H₃₂FeN₄O₄ | **Category**: 생화학 화합물 | **Description**: 헤모글로빈의 산소 결합 부위
+
+149. **Name**: ATP | **Formula**: C₁₀H₁₆N₅O₁₃P₃ | **Category**: 생화학 화합물 | **Description**: 아데노신삼인산으로 세포의 에너지 화폐
+
+150. **Name**: NAD+ | **Formula**: C₂₁H₂₇N₇O₁₄P₂ | **Category**: 생화학 화합물 | **Description**: 산화환원 반응의 보조효소
+
+## 고분자 화합물
+
+151. **Name**: 폴리에틸렌 | **Formula**: (C₂H₄)n | **Category**: 고분자 화합물 | **Description**: 가장 널리 사용되는 플라스틱
+
+152. **Name**: 폴리프로필렌 | **Formula**: (C₃H₆)n | **Category**: 고분자 화합물 | **Description**: 내열성이 우수한 플라스틱
+
+153. **Name**: 폴리스티렌 | **Formula**: (C₈H₈)n | **Category**: 고분자 화합물 | **Description**: 스티로폼의 주성분
+
+154. **Name**: PVC | **Formula**: (C₂H₃Cl)n | **Category**: 고분자 화합물 | **Description**: 폴리염화비닐로 배관과 바닥재에 사용
+
+155. **Name**: PET | **Formula**: (C₁₀H₈O₄)n | **Category**: 고분자 화합물 | **Description**: 폴리에틸렌테레프탈레이트로 페트병 소재
+
+156. **Name**: 나일론 6 | **Formula**: (C₆H₁₁NO)n | **Category**: 고분자 화합물 | **Description**: 섬유와 공업용 소재
+
+157. **Name**: 나일론 6,6 | **Formula**: (C₁₂H₂₂N₂O₂)n | **Category**: 고분자 화합물 | **Description**: 강도가 높은 합성 섬유
+
+158. **Name**: 폴리카보네이트 | **Formula**: (C₁₆H₁₄O₃)n | **Category**: 고분자 화합물 | **Description**: 투명하고 강한 플라스틱
+
+159. **Name**: 폴리우레탄 | **Formula**: (C₃H₆N₂O₂)n | **Category**: 고분자 화합물 | **Description**: 스펀지와 단열재 소재
+
+160. **Name**: PMMA | **Formula**: (C₅H₈O₂)n | **Category**: 고분자 화합물 | **Description**: 아크릴로 불리는 투명 플라스틱
+
+161. **Name**: 테플론 | **Formula**: (C₂F₄)n | **Category**: 고분자 화합물 | **Description**: 폴리테트라플루오로에틸렌으로 논스틱 코팅
+
+162. **Name**: 실리콘 | **Formula**: (C₂H₆OSi)n | **Category**: 고분자 화합물 | **Description**: 폴리실록산으로 방수 코팅과 의료용 소재
+
+163. **Name**: 천연고무 | **Formula**: (C₅H₈)n | **Category**: 고분자 화합물 | **Description**: 이소프렌의 중합체
+
+164. **Name**: 합성고무 | **Formula**: (C₄H₆)n | **Category**: 고분자 화합물 | **Description**: 부타디엔 기반 탄성체
+
+## 약물 및 의약품
+
+165. **Name**: 이부프로펜 | **Formula**: C₁₃H₁₈O₂ | **Category**: 약물 | **Description**: 비스테로이드성 소염진통제
+
+166. **Name**: 나프록센 | **Formula**: C₁₄H₁₄O₃ | **Category**: 약물 | **Description**: 항염증 진통제
+
+167. **Name**: 페니실린 | **Formula**: C₁₆H₁₈N₂O₄S | **Category**: 약물 | **Description**: 최초의 항생제
+
+168. **Name**: 암피실린 | **Formula**: C₁₆H₁₉N₃O₄S | **Category**: 약물 | **Description**: 광범위 항생제
+
+169. **Name**: 테트라사이클린 | **Formula**: C₂₂H₂₄N₂O₈ | **Category**: 약물 | **Description**: 광범위 항생제
+
+170. **Name**: 시프로플록사신 | **Formula**: C₁₇H₁₈FN₃O₃ | **Category**: 약물 | **Description**: 플루오로퀴놀론계 항생제
+
+171. **Name**: 아목시실린 | **Formula**: C₁₆H₁₉N₃O₅S | **Category**: 약물 | **Description**: 페니실린계 항생제
+
+172. **Name**: 메트포르민 | **Formula**: C₄H₁₁N₅ | **Category**: 약물 | **Description**: 당뇨병 치료제
+
+173. **Name**: 인슐린 | **Formula**: C₂₅₇H₃₈₃N₆₅O₇₇S₆ | **Category**: 약물 | **Description**: 혈당 조절 호르몬
+
+174. **Name**: 아토르바스타틴 | **Formula**: C₃₃H₃₅FN₂O₅ | **Category**: 약물 | **Description**: 콜레스테롤 저하제
+
+175. **Name**: 오메프라졸 | **Formula**: C₁₇H₁₉N₃O₃S | **Category**: 약물 | **Description**: 위산 억제제
+
+176. **Name**: 라니티딘 | **Formula**: C₁₃H₂₂N₄O₃S | **Category**: 약물 | **Description**: H2 차단제 위산 억제제
+
+177. **Name**: 로라타딘 | **Formula**: C₂₂H₂₃ClN₂O₂ | **Category**: 약물 | **Description**: 비진정성 항히스타민제
+
+178. **Name**: 세티리진 | **Formula**: C₂₁H₂₅ClN₂O₃ | **Category**: 약물 | **Description**: 알레르기 치료제
+
+179. **Name**: 디펜히드라민 | **Formula**: C₁₇H₂₁NO | **Category**: 약물 | **Description**: 진정성 항히스타민제
+
+180. **Name**: 프레드니솔론 | **Formula**: C₂₁H₂₈O₅ | **Category**: 약물 | **Description**: 합성 코르티코스테로이드
+
+181. **Name**: 덱사메타손 | **Formula**: C₂₂H₂₉FO₅ | **Category**: 약물 | **Description**: 강력한 항염증제
+
+182. **Name**: 디아제팜 | **Formula**: C₁₆H₁₃ClN₂O | **Category**: 약물 | **Description**: 벤조디아제핀계 항불안제
+
+183. **Name**: 알프라졸람 | **Formula**: C₁₇H₁₃ClN₄ | **Category**: 약물 | **Description**: 자낙스로 알려진 항불안제
+
+184. **Name**: 플루옥세틴 | **Formula**: C₁₇H₁₈F₃NO | **Category**: 약물 | **Description**: 프로작으로 알려진 항우울제
+
+185. **Name**: 세르트랄린 | **Formula**: C₁₇H₁₇Cl₂N | **Category**: 약물 | **Description**: 졸로프트로 알려진 SSRI 항우울제
+
+186. **Name**: 파록세틴 | **Formula**: C₁₉H₂₀FNO₃ | **Category**: 약물 | **Description**: SSRI 계열 항우울제
+
+187. **Name**: 리튬카보네이트 | **Formula**: Li₂CO₃ | **Category**: 약물 | **Description**: 양극성 장애 치료제
+
+188. **Name**: 발프로산 | **Formula**: C₈H₁₆O₂ | **Category**: 약물 | **Description**: 항경련제 및 기분 안정제
+
+189. **Name**: 카바마제핀 | **Formula**: C₁₅H₁₂N₂O | **Category**: 약물 | **Description**: 항경련제
+
+190. **Name**: 페니토인 | **Formula**: C₁₅H₁₂N₂O₂ | **Category**: 약물 | **Description**: 간질 치료제
+
+## 농약 및 산업 화학물
+
+191. **Name**: DDT | **Formula**: C₁₄H₉Cl₅ | **Category**: 농약 | **Description**: 과거 사용된 살충제로 현재 금지
+
+192. **Name**: 글리포세이트 | **Formula**: C₃H₈NO₅P | **Category**: 농약 | **Description**: 라운드업의 주성분 제초제
+
+193. **Name**: 말라티온 | **Formula**: C₁₀H₁₉O₆PS₂ | **Category**: 농약 | **Description**: 유기인계 살충제
+
+194. **Name**: 피레트린 | **Formula**: C₂₁H₂₈O₃ | **Category**: 농약 | **Description**: 천연 살충제 성분
+
+195. **Name**: 이미다클로프리드 | **Formula**: C₉H₁₀ClN₅O₂ | **Category**: 농약 | **Description**: 네오니코티노이드계 살충제
+
+196. **Name**: TNT | **Formula**: C₇H₅N₃O₆ | **Category**: 산업 화학물 | **Description**: 트리니트로톨루엔으로 폭약
+
+197. **Name**: 니트로글리세린 | **Formula**: C₃H₅N₃O₉ | **Category**: 산업 화학물 | **Description**: 다이너마이트의 주성분
+
+198. **Name**: 프레온-12 | **Formula**: CCl₂F₂ | **Category**: 산업 화학물 | **Description**: CFC 냉매로 오존층 파괴 물질
+
+199. **Name**: 다이옥신 | **Formula**: C₁₂H₄Cl₄O₂ | **Category**: 산업 화학물 | **Description**: 매우 유독한 환경 오염 물질
+
+200. **Name**: PCB | **Formula**: C₁₂H₁₀₋ₓClₓ | **Category**: 산업 화학물 | **Description**: 폴리염화비페닐로 과거 전기 절연체
