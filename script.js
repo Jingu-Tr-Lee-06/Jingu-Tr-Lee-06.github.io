@@ -224,62 +224,70 @@ const initialChemicals = [
     { name: "니트로글리세린", formula: "C₃H₅N₃O₉", category: "산업 화학물", description: "다이너마이트의 주성분" },
     { name: "프레온-12", formula: "CCl₂F₂", category: "산업 화학물", description: "CFC 냉매로 오존층 파괴 물질" },
     { name: "다이옥신", formula: "C₁₂H₄Cl₄O₂", category: "산업 화학물", description: "매우 유독한 환경 오염 물질" },
-    { name: "PCB", formula: "C₁₂H₁₀₋ₓClₓ", category: "산업 화학물", description: "폴리염화비페닐로 과거 전기 절연체" }
+    { name: "PCB", formula: "C₁₂H₁₀₋ₓClₓ", category: "산업 화합물", description: "폴리염화비페닐로 과거 전기 절연체" }
 ];
 
 // 페이지 로드 시
 document.addEventListener('DOMContentLoaded', () => {
     initializeData();
     loadChemicals();
-    loadCategories();
     loadTheme();
 });
 
 // ===== 초기 데이터 설정 =====
-function initializeData() {
-    const stored = localStorage.getItem('chemicals');
-    if (!stored) {
-        chemicals = initialChemicals.map((chem, index) => ({
-            id: (index + 1).toString(),
-            name: chem.name,
-            formula: chem.formula,
-            category: chem.category,
-            description: chem.description,
-            source: "https://en.wikipedia.org/",
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString()
-        }));
-        saveChemicals();
+async function initializeData() {
+    try {
+        const chemicalsRef = collection(db, "chemicals");
+        const snapshot = await getDocs(chemicalsRef);
         
-        initialChemicals.forEach(chem => {
-            categories.add(chem.category);
-        });
-        saveCategories();
-        
-        console.log("✅ 초기 데이터 로드 완료: " + chemicals.length + "개");
+        // Firebase에 데이터가 없으면 초기 데이터 추가
+        if (snapshot.empty) {
+            console.log("Firebase에 데이터가 없습니다. 초기 데이터를 추가합니다...");
+            
+            for (const chem of initialChemicals) {
+                await addDoc(chemicalsRef, {
+                    name: chem.name,
+                    formula: chem.formula,
+                    category: chem.category,
+                    description: chem.description,
+                    source: "https://en.wikipedia.org/",
+                    createdAt: new Date().toISOString(),
+                    updatedAt: new Date().toISOString()
+                });
+                
+                categories.add(chem.category);
+            }
+            
+            console.log("✅ 초기 데이터 로드 완료: " + initialChemicals.length + "개");
+            saveCategories();
+            updateCategorySelects();
+        }
+    } catch (error) {
+        console.error("초기 데이터 설정 오류:", error);
     }
 }
 
 // ===== 데이터 로드 =====
-function loadChemicals() {
+async function loadChemicals() {
     try {
-        const stored = localStorage.getItem('chemicals');
-        chemicals = stored ? JSON.parse(stored) : [];
+        const chemicalsRef = collection(db, "chemicals");
+        const snapshot = await getDocs(chemicalsRef);
+        
+        chemicals = [];
+        snapshot.forEach((doc) => {
+            chemicals.push({
+                id: doc.id,
+                ...doc.data()
+            });
+            categories.add(doc.data().category);
+        });
+        
+        console.log("✅ Firebase에서 로드: " + chemicals.length + "개");
+        updateCategorySelects();
         displayChemicals(chemicals);
     } catch (error) {
         console.error("화학물질 로드 오류:", error);
         chemicals = [];
-    }
-}
-
-function loadCategories() {
-    try {
-        const stored = localStorage.getItem('categories');
-        categories = stored ? new Set(JSON.parse(stored)) : new Set();
-        updateCategorySelects();
-    } catch (error) {
-        console.error("카테고리 로드 오류:", error);
-        categories = new Set();
     }
 }
 
@@ -423,7 +431,7 @@ function createPagination(totalItems) {
 }
 
 // ===== 화학물질 추가/저장 =====
-document.getElementById('chemicalForm').addEventListener('submit', (e) => {
+document.getElementById('chemicalForm').addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
@@ -456,50 +464,37 @@ document.getElementById('chemicalForm').addEventListener('submit', (e) => {
     }
 
     const chemicalData = {
-        id: currentEditId || Date.now().toString(),
         name,
         formula,
         category,
         description,
         source,
-        createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
     };
 
     try {
         if (currentEditId) {
-            // 기존 항목 수정
-            const index = chemicals.findIndex(c => c.id === currentEditId);
-            if (index > -1) {
-                chemicals[index] = { ...chemicals[index], ...chemicalData, updatedAt: new Date().toISOString() };
-                alert("화학물질이 수정되었습니다.");
-            }
+            // Firebase에서 수정
+            const chemicalRef = doc(db, "chemicals", currentEditId);
+            await updateDoc(chemicalRef, chemicalData);
+            alert("화학물질이 수정되었습니다.");
             currentEditId = null;
         } else {
-            // 새 항목 추가
-            chemicals.push(chemicalData);
+            // Firebase에 새 항목 추가
+            chemicalData.createdAt = new Date().toISOString();
+            await addDoc(collection(db, "chemicals"), chemicalData);
             alert("화학물질이 추가되었습니다.");
         }
 
-        saveChemicals();
         closeAddModal();
-        loadChemicals();
+        await loadChemicals();
         document.getElementById('chemicalForm').reset();
         document.getElementById('newCategory').style.display = 'none';
     } catch (error) {
         console.error("저장 오류:", error);
-        alert("저장 중 오류가 발생했습니다.");
+        alert("저장 중 오류가 발생했습니다: " + error.message);
     }
 });
-
-// ===== 저장 함수 =====
-function saveChemicals() {
-    localStorage.setItem('chemicals', JSON.stringify(chemicals));
-}
-
-function saveCategories() {
-    localStorage.setItem('categories', JSON.stringify(Array.from(categories)));
-}
 
 // ===== 화학물질 수정 =====
 function editChemical(id) {
@@ -518,20 +513,27 @@ function editChemical(id) {
 }
 
 // ===== 화학물질 삭제 =====
-function deleteChemical(id) {
+async function deleteChemical(id) {
     if (confirm('정말로 삭제하시겠습니까?')) {
-        chemicals = chemicals.filter(c => c.id !== id);
-        saveChemicals();
-        
-        // 필터링 상태 유지하며 재표시
-        const category = document.getElementById('categoryFilter').value;
-        if (category === 'all') {
-            displayChemicals(chemicals);
-        } else {
-            const filtered = chemicals.filter(c => c.category === category);
-            displayChemicals(filtered);
+        try {
+            // Firebase에서 삭제
+            await deleteDoc(doc(db, "chemicals", id));
+            alert("화학물질이 삭제되었습니다.");
+            
+            // 필터링 상태 유지하며 재표시
+            const category = document.getElementById('categoryFilter').value;
+            await loadChemicals();
+            
+            if (category === 'all') {
+                displayChemicals(chemicals);
+            } else {
+                const filtered = chemicals.filter(c => c.category === category);
+                displayChemicals(filtered);
+            }
+        } catch (error) {
+            console.error("삭제 오류:", error);
+            alert("삭제 중 오류가 발생했습니다: " + error.message);
         }
-        alert("화학물질이 삭제되었습니다.");
     }
 }
 
@@ -625,6 +627,10 @@ function updateLogo(theme) {
     } else {
         logoImage.src = 'Light_Logo.png';
     }
+}
+
+function saveCategories() {
+    localStorage.setItem('categories', JSON.stringify(Array.from(categories)));
 }
 
 // 전역 함수 노출
