@@ -259,8 +259,11 @@ async function initializeData() {
             }
             
             console.log("✅ 초기 데이터 로드 완료: " + initialChemicals.length + "개");
-            saveCategories();
+            await saveCategories();
             updateCategorySelects();
+        } else {
+            // 이미 데이터가 있으면 카테고리 로드
+            await loadCategories();
         }
     } catch (error) {
         console.error("초기 데이터 설정 오류:", error);
@@ -283,6 +286,7 @@ async function loadChemicals() {
         });
         
         console.log("✅ Firebase에서 로드: " + chemicals.length + "개");
+        await loadCategories();
         updateCategorySelects();
         displayChemicals(chemicals);
     } catch (error) {
@@ -291,143 +295,46 @@ async function loadChemicals() {
     }
 }
 
-// ===== 카테고리 표시 =====
-function updateCategorySelects() {
-    const categorySelect = document.getElementById('category');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const categoryGrid = document.getElementById('categoryGrid');
-
-    categorySelect.innerHTML = '<option value="">선택하세요</option>';
-    categories.forEach(cat => {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.textContent = cat;
-        categorySelect.appendChild(option);
-    });
-
-    categoryFilter.innerHTML = '<option value="all">전체 카테고리</option>';
-    categories.forEach(cat => {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.textContent = cat;
-        categoryFilter.appendChild(option);
-    });
-
-    categoryGrid.innerHTML = '';
-    categories.forEach(cat => {
-        const count = chemicals.filter(c => c.category === cat).length;
-        const card = document.createElement('div');
-        card.className = 'category-card';
-        card.innerHTML = `<div>${cat}</div><div style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">${count}개 물질</div>`;
-        card.onclick = () => {
-            document.getElementById('categoryFilter').value = cat;
-            filterByCategory();
-            scrollToSection('content');
-        };
-        categoryGrid.appendChild(card);
-    });
+// ===== 카테고리 로드 =====
+async function loadCategories() {
+    try {
+        const categoriesRef = collection(db, "categories");
+        const snapshot = await getDocs(categoriesRef);
+        
+        categories.clear();
+        snapshot.forEach((doc) => {
+            categories.add(doc.data().name);
+        });
+        
+        console.log("✅ Firebase에서 카테고리 로드: " + categories.size + "개");
+    } catch (error) {
+        console.error("카테고리 로드 오류:", error);
+    }
 }
 
-// ===== 화학물질 표시 =====
-function displayChemicals(data) {
-    filteredChemicals = data;
-    currentPage = 1;
-    displayPage(currentPage);
-}
-
-function displayPage(page) {
-    const tableBody = document.getElementById('chemicalTableBody');
-    tableBody.innerHTML = '';
-
-    if (filteredChemicals.length === 0) {
-        tableBody.innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 2rem; color: #7f8c8d;">등록된 화학물질이 없습니다.</td></tr>';
-        createPagination(0);
-        return;
+// ===== 카테고리 저장 =====
+async function saveCategories() {
+    try {
+        const categoriesRef = collection(db, "categories");
+        
+        // 기존 카테고리 삭제
+        const snapshot = await getDocs(categoriesRef);
+        snapshot.forEach(async (doc) => {
+            await deleteDoc(doc.ref);
+        });
+        
+        // 새 카테고리 추가
+        for (const cat of categories) {
+            await addDoc(categoriesRef, {
+                name: cat,
+                createdAt: new Date().toISOString()
+            });
+        }
+        
+        console.log("✅ 카테고리 Firebase에 저장: " + categories.size + "개");
+    } catch (error) {
+        console.error("카테고리 저장 오류:", error);
     }
-
-    const startIndex = (page - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    const pageData = filteredChemicals.slice(startIndex, endIndex);
-
-    pageData.forEach(chemical => {
-        const row = document.createElement('tr');
-        const desc = chemical.description ? chemical.description.substring(0, 50) + '...' : '-';
-        row.innerHTML = `
-            <td>${chemical.name || '-'}</td>
-            <td>${chemical.formula || '-'}</td>
-            <td>${chemical.category || '-'}</td>
-            <td>${desc}</td>
-            <td>${chemical.source ? `<a href="${chemical.source}" target="_blank">링크</a>` : '-'}</td>
-            <td>
-                <button class="btn-edit" onclick="editChemical('${chemical.id}')">수정</button>
-                <button class="btn-danger" onclick="deleteChemical('${chemical.id}')">삭제</button>
-            </td>
-        `;
-        tableBody.appendChild(row);
-    });
-
-    createPagination(filteredChemicals.length);
-}
-
-function createPagination(totalItems) {
-    const paginationContainer = document.getElementById('paginationContainer');
-    paginationContainer.innerHTML = '';
-
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-    if (totalPages <= 1) {
-        return;
-    }
-
-    const paginationDiv = document.createElement('div');
-    paginationDiv.style.cssText = `
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-top: 2rem;
-        flex-wrap: wrap;
-    `;
-
-    // 이전 버튼
-    if (currentPage > 1) {
-        const prevBtn = document.createElement('button');
-        prevBtn.className = 'btn-pagination';
-        prevBtn.textContent = '◀ 이전';
-        prevBtn.onclick = () => {
-            currentPage--;
-            displayPage(currentPage);
-            scrollToSection('content');
-        };
-        paginationDiv.appendChild(prevBtn);
-    }
-
-    // 페이지 번호
-    for (let i = 1; i <= totalPages; i++) {
-        const pageBtn = document.createElement('button');
-        pageBtn.className = currentPage === i ? 'btn-pagination active' : 'btn-pagination';
-        pageBtn.textContent = i;
-        pageBtn.onclick = () => {
-            currentPage = i;
-            displayPage(currentPage);
-            scrollToSection('content');
-        };
-        paginationDiv.appendChild(pageBtn);
-    }
-
-    // 다음 버튼
-    if (currentPage < totalPages) {
-        const nextBtn = document.createElement('button');
-        nextBtn.className = 'btn-pagination';
-        nextBtn.textContent = '다음 ▶';
-        nextBtn.onclick = () => {
-            currentPage++;
-            displayPage(currentPage);
-            scrollToSection('content');
-        };
-        paginationDiv.appendChild(nextBtn);
-    }
-
-    paginationContainer.appendChild(paginationDiv);
 }
 
 // ===== 화학물질 추가/저장 =====
@@ -458,7 +365,7 @@ document.getElementById('chemicalForm').addEventListener('submit', async (e) => 
         category = newCategory;
         if (!categories.has(newCategory)) {
             categories.add(newCategory);
-            saveCategories();
+            await saveCategories();
             updateCategorySelects();
         }
     }
@@ -629,10 +536,6 @@ function updateLogo(theme) {
     }
 }
 
-function saveCategories() {
-    localStorage.setItem('categories', JSON.stringify(Array.from(categories)));
-}
-
 // 전역 함수 노출
 window.openAddModal = openAddModal;
 window.closeAddModal = closeAddModal;
@@ -644,3 +547,5 @@ window.showNewCategoryInput = showNewCategoryInput;
 window.scrollToSection = scrollToSection;
 window.toggleTheme = toggleTheme;
 window.updateLogo = updateLogo;
+window.loadCategories = loadCategories;
+window.saveCategories = saveCategories;
